@@ -13,7 +13,7 @@
             </ul>
             <p class="mb-4">
             Andrey Bau-GU GmbH<br />
-            Kirchenfeld 69<br />
+            Kirchenfeld 65<br />
             8052 Seebach-ZH
             </p>
           </div>

@@ -9,10 +9,10 @@ Andrey-Bau GU
 <div class="container">
     
 <p>
-🔺Torri Verwaltungs AG<br />
-Wollerau SZ.<br />
-Frau Cornelia Torri<br />
-Mob 076 322 76 30
+🔺Da Vitti Verwaltungs AG<br />
+Zürich <br />
+Frau Michel Vitti<br />
+Mob 078 791 59 73
 </p>
 <br>
 <p>

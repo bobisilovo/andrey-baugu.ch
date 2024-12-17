@@ -18,6 +18,6 @@ $routes->get('/kundenarbeiten', 'Home::kundenarbeiten');
 $routes->get('/referenzen', 'Home::referenzen');
 
 $routes->get('/kontakt', 'Kontakt::index');
-$routes->post('/kontakt/submit', 'Kontakt::submit');
-$routes->get('/kontakt/kontakt_uspeh', 'Kontakt::kontakt_uspeh');
-$routes->get('/kontakt/kontakt_neuspeh', 'Kontakt::kontakt_neuspeh');
+$routes->post('/kontakt_submit', 'Kontakt::kontakt_submit');
+$routes->get('/kontakt_uspeh', 'Kontakt::kontakt_uspeh');
+$routes->get('/kontakt_neuspeh', 'Kontakt::kontakt_neuspeh');

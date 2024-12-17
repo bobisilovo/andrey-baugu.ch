@@ -5,12 +5,11 @@ namespace App\Controllers;
 class Kontakt extends BaseController
 {
     public function index()
-    {
-        
+    {        
         return view("kontakt/kontakt");
     }
 
-    public function submit() 
+    public function kontakt_submit() 
     {
         $email = \Config\Services::email();
         $email->setTo('info@andrey-baugu.ch');
@@ -19,9 +18,9 @@ class Kontakt extends BaseController
         $email->setMessage($this->request->getPost('message'));
         
         if ($email->send()) {
-            return redirect()->to('/kontakt/kontakt_uspeh');
+            return redirect()->to('kontakt_uspeh');
         } else {
-            return redirect()->to('/kontakt/kontakt_neuspeh');
+            return redirect()->to('kontakt_neuspeh');
         }
     }
     

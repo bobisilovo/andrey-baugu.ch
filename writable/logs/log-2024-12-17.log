@@ -76,3 +76,267 @@ starttls: 503 STARTTLS command used when not advertised
 
 The following SMTP error was encountered: 503 STARTTLS command used when not advertised
 
+ERROR - 2024-12-17 12:47:11 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 12:47:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 12:47:11 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 13:47:10 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 12:55:07 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 12:55:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 12:55:07 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 13:55:06 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 12:56:02 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 12:56:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 12:56:02 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 13:56:01 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 12:56:50 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 12:56:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 12:56:50 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 13:56:49 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 12:59:24 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 12:59:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 12:59:24 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 13:59:23 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 13:00:01 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 13:00:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 13:00:01 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 14:00:00 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 13:01:46 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(21): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 13:01:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 13:01:46 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 14:01:45 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2024-12-17 13:05:31 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1916): stream_socket_enable_crypto()
+#2 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Programiranje\www\andrey-baugu.ch\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Programiranje\www\andrey-baugu.ch\app\Controllers\Kontakt.php(20): CodeIgniter\Email\Email->send()
+#6 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(933): App\Controllers\Kontakt->kontakt_submit()
+#7 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 D:\Programiranje\www\andrey-baugu.ch\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Programiranje\www\andrey-baugu.ch\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 D:\Programiranje\www\andrey-baugu.ch\index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+ERROR - 2024-12-17 13:05:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-12-17 13:05:31 --> 220-dolf.dnsserve.rs ESMTP Exim 4.98 #2 Tue, 17 Dec 2024 14:05:31 +0100 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-dolf.dnsserve.rs Hello localhost [5.206.237.204]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+

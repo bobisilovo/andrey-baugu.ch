@@ -2,20 +2,27 @@
 
 namespace App\Controllers;
 
-class Kontakt extends BaseController
+class KontaktController extends BaseController
 {
     public function index()
     {        
         return view("kontakt/kontakt");
     }
 
-    public function kontakt_submit() 
+    public function kontakt_slanje() 
     {
+        $name = $this->request->getPost('name');
+        $email = $this->request->getPost('email');
+        $message = $this->request->getPost('message');
+
+        // Proveri podatke
+        var_dump($name, $email, $message);
+
         $email = \Config\Services::email();
         $email->setTo('info@andrey-baugu.ch');
-        $email->setFrom($this->request->getPost('email'), $this->request->getPost('name'));
+        $email->setFrom($email, $name);
         $email->setSubject('Kontakt poruka sa sajta andrey-baugu.ch');
-        $email->setMessage($this->request->getPost('message'));
+        $email->setMessage($message);
         
         if ($email->send()) {
             return redirect()->to('kontakt_uspeh');

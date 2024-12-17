@@ -10,7 +10,7 @@ Andrey-Bau GU
 
         <div class="contact-form">
             <h2>Kontaktieren Sie uns</h2>
-            <form action="<?= base_url('kontakt_submit') ?>" method="post">
+            <form action=" <?= base_url('/kontakt_slanje') ?>" method="post">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="E-mail" required>
                 <textarea name="message" placeholder="Ihre Nachricht" required></textarea>

@@ -17,7 +17,8 @@ $routes->get('/umbauten', 'Home::umbauten');
 $routes->get('/kundenarbeiten', 'Home::kundenarbeiten');
 $routes->get('/referenzen', 'Home::referenzen');
 
-$routes->get('/kontakt', 'Kontakt::index');
-$routes->post('/kontakt_submit', 'Kontakt::kontakt_submit');
-$routes->get('/kontakt_uspeh', 'Kontakt::kontakt_uspeh');
-$routes->get('/kontakt_neuspeh', 'Kontakt::kontakt_neuspeh');
+$routes->get('/kontakt', 'KontaktController::index');
+$routes->post('/kontakt_slanje', 'KontaktController::kontakt_slanje');
+#$routes->get('/kontakt_slanje', 'KontaktController::kontakt_slanje');
+$routes->get('/kontakt_uspeh', 'KontaktController::kontakt_uspeh');
+$routes->get('/kontakt_neuspeh', 'KontaktController::kontakt_neuspeh');

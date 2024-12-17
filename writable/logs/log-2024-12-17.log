@@ -340,3 +340,38 @@ starttls: 503 STARTTLS command used when not advertised
 
 The following SMTP error was encountered: 503 STARTTLS command used when not advertised
 
+CRITICAL - 2024-12-17 13:33:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kontakt/test.php"
+[Method: POST, Route: kontakt_submit]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\KontaktController.php(14): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KontaktController->kontakt_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-17 13:33:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kontakt/test.php"
+[Method: POST, Route: kontakt_submit]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\KontaktController.php(14): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KontaktController->kontakt_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-17 13:40:18 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, CodeIgniter\Email\Email given
+[Method: POST, Route: kontakt_slanje]
+in SYSTEMPATH\Email\Email.php on line 481.
+ 1 SYSTEMPATH\Email\Email.php(481): preg_match()
+ 2 APPPATH\Controllers\KontaktController.php(23): CodeIgniter\Email\Email->setFrom()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KontaktController->kontakt_slanje()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()

@@ -16,5 +16,8 @@ $routes->get('/neubauten', 'Home::neubauten');
 $routes->get('/umbauten', 'Home::umbauten');
 $routes->get('/kundenarbeiten', 'Home::kundenarbeiten');
 $routes->get('/referenzen', 'Home::referenzen');
-$routes->get('/kontakt', 'Home::kontakt');
 
+$routes->get('/kontakt', 'Kontakt::index');
+$routes->post('/kontakt/submit', 'Kontakt::submit');
+$routes->get('/kontakt/kontakt_uspeh', 'Kontakt::kontakt_uspeh');
+$routes->get('/kontakt/kontakt_neuspeh', 'Kontakt::kontakt_neuspeh');

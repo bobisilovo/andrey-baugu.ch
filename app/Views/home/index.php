@@ -48,6 +48,4 @@ Andrey-Bau GU
 </section><!-- /About 2 Section -->
 
 
-
-
 <?= $this->endSection() ?>

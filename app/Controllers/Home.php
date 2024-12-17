@@ -45,10 +45,10 @@ class Home extends BaseController
     {
         return view("home/referenzen");
     }
-    public function kontakt()
+ /*    public function kontakt()
     {
         return view("home/kontakt");
-    }
+    } */
     public function dobrodoslica(): string
     {
         //echo view("welcome_message");

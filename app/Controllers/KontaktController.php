@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\Controller;
+use App\Libraries\SendGridLibrary;
+
 class KontaktController extends BaseController
 {
     public function index()
@@ -9,14 +12,11 @@ class KontaktController extends BaseController
         return view("kontakt/kontakt");
     }
 
-    public function kontakt_slanje() 
+    public function kontakt_slanje()
     {
         $name = $this->request->getPost('name');
         $email = $this->request->getPost('email');
         $message = $this->request->getPost('message');
-
-        // Proveri podatke
-        #var_dump($name, $email, $message);
 
         // Validacija podataka
         if (!$this->validate([
@@ -26,33 +26,38 @@ class KontaktController extends BaseController
         ])) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
-/* 
-        $email = \Config\Services::email();
-        $email->setTo('info@andrey-baugu.ch');
-        $email->setFrom($email, $name);
-        $email->setSubject('Kontakt poruka sa sajta andrey-baugu.ch');
-        $email->setMessage($message);
-        
-        if ($email->send()) { */
 
-        $emailService = \Config\Services::email();
-        $emailService->setTo('info@andrey-baugu.ch');
-        $emailService->setFrom($email, $name); // Ispravljeno: koristi varijablu $email za adresu pošiljaoca
-        $emailService->setSubject('Kontakt poruka sa sajta andrey-baugu.ch');
-        $emailService->setMessage($message);
-        
-        if ($emailService->send()) {
-            return redirect()->to('kontakt_uspeh');
+        $sendGrid = new SendGridLibrary();
+        $subject = "Kontakt poruka sa sajta andrey-baugu.ch";
+        #$content = "Ime: $name\nEmail: $email\nPoruka:\n$message";
+        $content = "Ime:<br>$name<br><br>Email:<br>$email<br><br>Poruka:<br>$message";
+        #$response = $sendGrid->sendEmail('admin@andrey-baugu.ch', 'Test', 'Email content');
+        $response = $sendGrid->sendEmail("admin@andrey-baugu.ch", $subject, $content);
+        if ($response) {
+            #$echo 'Email sent successfully!';
+            return redirect()->to(base_url('kontakt_uspeh'));
         } else {
-            return redirect()->to('kontakt_neuspeh');
+            #echo 'Failed to send email.';
+            return redirect()->to(base_url('kontakt_neuspeh'))->with('error', 'Failed to send email.');
         }
     }
-    
+
     public function kontakt_uspeh() {
         return view('kontakt/kontakt_uspeh');
     }
-    
+
     public function kontakt_neuspeh() {
         return view('kontakt/kontakt_neuspeh');
+    }
+    public function test()
+    {
+        $sendGrid = new SendGridLibrary();
+        $response = $sendGrid->sendEmail('admin@andrey-baugu.ch', 'Test', 'Email content');
+
+        if ($response) {
+            echo 'Email sent successfully!';
+        } else {
+            echo 'Failed to send email.';
+        }
     }
 }

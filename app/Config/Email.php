@@ -18,37 +18,46 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'smtp';
+    public string $protocol = 'mail';
 
     /**
      * The server path to Sendmail.
-     * promenjeno
      */
     public string $mailPath = '/usr/sbin/sendmail';
 
     /**
      * SMTP Server Hostname
-     * promenjeno
      */
-    public string $SMTPHost = 'mail.andrey-baugu.ch';
+    public string $SMTPHost = '';
+
+    /*
+    
+    public $protocol = 'smtp';
+    public $SMTPHost = 'your-smtp-server';
+    public $SMTPUser = 'your-email@example.com';
+    public $SMTPPass = 'your-email-password';
+    public $SMTPPort = 587;
+    public $mailType = 'html';
+    public $charset = 'utf-8';
+    public $newline = "\r\n";
+    
+    */
+
 
     /**
      * SMTP Username
-     * promenjeno
      */
-    public string $SMTPUser = 'info@andrey-baugu.ch';
+    public string $SMTPUser = '';
 
     /**
      * SMTP Password
-     * promenjeno
      */
-    public string $SMTPPass = 'AndreyBauGuCH2024';
+    public string $SMTPPass = '';
 
     /**
      * SMTP Port
-     * promenjeno
      */
-    public int $SMTPPort = 465;
+    public int $SMTPPort = 25;
 
     /**
      * SMTP Timeout (in seconds)
@@ -81,9 +90,8 @@ class Email extends BaseConfig
 
     /**
      * Type of mail, either 'text' or 'html'
-     * promenjeno
      */
-    public string $mailType = 'html';
+    public string $mailType = 'text';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
